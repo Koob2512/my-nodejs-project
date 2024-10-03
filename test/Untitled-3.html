@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 200px 200px 200px;
+            gap: 2.5px;
+        }
+
+        .first {
+            grid-column: span 2;
+        }
+
+        .card {
+            background-color: rgb(100, 175, 165);
+        }
+
+        @media (max-width: 600px){
+            .container
+            .second{
+                grid-column:  span2;
+            }
+            .third{
+                grid-column: span2;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="first card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card second"></div>
+        <div class="card third"></div>
+    </div>
+</body>
+</html>

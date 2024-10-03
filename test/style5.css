@@ -1,0 +1,8 @@
+.grid-container {
+ display:grid;
+ grid-template: 100px auto/ 400px auto;
+ gap: 10px;
+}
+.grid-item {
+ background-color:blue;
+}
